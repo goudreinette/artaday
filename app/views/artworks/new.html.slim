@@ -1,0 +1,9 @@
+h1 Submit Artwork
+
+= form_for :artwork, url: artworks_path  do |f|
+  p
+    = f.label :title
+    br/
+    = f.text_field :title
+  p
+    = f.submit
