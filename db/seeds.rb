@@ -7,11 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Medium.create([
-    {name: 'Visual Arts'},
-    {name: 'Programming'},
-    {name: 'Photography'},
-    {name: 'Music'},
-    {name: 'Theatre'},
-    {name: 'Writing'},
-    {name: 'Programming'},
+  {name: 'Visual Arts'},
+  {name: 'Photography'},
+  {name: 'Music'},
+  {name: 'Theatre'},
+  {name: 'Writing'},
+  {name: 'Programming'},
+  {name: 'Crafts'},
+  {name: 'Design'}
 ])
