@@ -19,6 +19,7 @@ ActiveRecord::Schema.define do
     t.belongs_to :topic
     t.belongs_to :medium
     t.belongs_to :type
+    t.attachment :attachment
     t.timestamps
   end
 end

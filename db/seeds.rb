@@ -16,3 +16,12 @@ Medium.create([
   {name: 'Crafts'},
   {name: 'Design'}
 ])
+
+
+Type.create([
+  {name: 'Audio'},
+  {name: 'Video'},
+  {name: 'Image'},
+  {name: 'Code'},
+  {name: 'Text'}
+])
