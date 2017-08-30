@@ -25,3 +25,12 @@ Type.create([
   {name: 'Code'},
   {name: 'Text'}
 ])
+
+Topic.create([
+    {name: 'Joy'},
+    {name: 'Loss'},
+    {name: 'Schadenfreude'},
+    {name: 'Sun'},
+    {name: 'Dogs'},
+    {name: 'T-shirts'},
+])
