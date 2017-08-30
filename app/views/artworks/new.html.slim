@@ -9,7 +9,7 @@ h1 Submit Artwork
   p
     = f.label :medium
     br/
-    = f.collection_select(:medium_id, Medium.all, :id, :name)
+    = model_select(f, Medium)
   p
     = f.label :description
     br/
