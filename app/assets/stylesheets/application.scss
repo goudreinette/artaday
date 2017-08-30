@@ -16,26 +16,48 @@
 @import "//cdn.rawgit.com/necolas/normalize.css/master/normalize.css";
 @import "//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css";
 
+/**
+ * Variables
+ */
+$accent: #880000;
+
+/**
+ * Global
+ */
 
 * {
-    font-family: Concourse T3 !important;
+    font-family: NeuzeitGroTOT !important;
 }
 
 html {
-    background: #eee;
-    padding: 25px;
     height: 100%;
 }
 
 body {
-    background: white;
     height: 100%;
+    padding-top: 50px;
 }
 
 .container {
-    max-width: 600px;
 }
 
 main {
     padding-top: 50px;
+
+}
+
+
+/**
+ * Nav
+ */
+nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+
+    .logo {
+        font-weight: bold;
+        font-size: 2rem;
+    }
 }
