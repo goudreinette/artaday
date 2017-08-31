@@ -64,8 +64,8 @@ nav {
     justify-content: space-between;
     // border-bottom: 1px solid #eee;
     align-items: center;
-    padding: 5px;
-    margin-bottom: 30px;
+    // padding: 5px;
+    margin-bottom: 35px;
 
     .logo {
         font-weight: bold;
@@ -99,56 +99,56 @@ nav {
 .art-grid {
     display: flex;
     flex-wrap: wrap;
-}
 
-.artwork {
-    width: 25%;
-    height: 200px;
-    display: flex;
-    padding: 1px;
-
-    &:nth-child(1), &:nth-child(2) {
-        width: 50%;
-    }
-
-    &:hover {
-        .info {
-            opacity: 1 !important;
-        }
-    }
-
-    .inner {
-        background: grey;
-        height: 100%;
-        width: 100%;
+    .artwork {
+        width: 25%;
+        height: 200px;
         display: flex;
-        position: relative;
-        transition: all 0.3s;
+        padding: 1px;
+
+        &:nth-child(1), &:nth-child(2) {
+            width: 50%;
+        }
 
         &:hover {
-            background: #a7a7a7;
+            .info {
+                opacity: 1 !important;
+            }
         }
 
-        .info {
-            align-self: flex-end;
-            padding: 15px 20px;
-            position: absolute;
+        .inner {
+            background: grey;
+            height: 100%;
             width: 100%;
-            bottom: 0;
-            opacity: 0;
-            background: rgba(0, 0, 0, 0.15);
+            display: flex;
+            position: relative;
             transition: all 0.3s;
 
-            .title, .medium {
-                color: white;
+            &:hover {
+                background: #a7a7a7;
             }
 
-            .title {
-                font-size: 1.8rem;
-            }
+            .info {
+                align-self: flex-end;
+                padding: 15px 20px;
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                opacity: 0;
+                background: rgba(0, 0, 0, 0.15);
+                transition: all 0.3s;
 
-            .medium {
-                font-size: 1.2rem;
+                .title, .medium {
+                    color: white;
+                }
+
+                .title {
+                    font-size: 1.8rem;
+                }
+
+                .medium {
+                    font-size: 1.2rem;
+                }
             }
         }
     }

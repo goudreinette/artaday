@@ -1,1 +1,4 @@
-h1 = @artwork.title
+.artwork
+  h1 = @artwork.title
+  .attachment
+    = image_tag @artwork.attachment.url
