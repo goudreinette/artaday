@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-@import "//cdn.rawgit.com/necolas/normalize.css/master/normalize.css";
+@import "/stylesheets/normalize.css";
 @import "/stylesheets/milligram.css";
 
 /**
@@ -158,7 +158,18 @@ nav {
 /**
  * Single
  */
-.attachment {
-    background: #eee;
-    margin: auto;
+.single.artwork {
+    .attachment {
+        background: #eee;
+        margin: auto;
+    }
+
+    .title {
+        margin-bottom: 3px;
+        margin-top: 10px;
+    }
+
+    .medium {
+        margin-top: 0px;
+    }
 }

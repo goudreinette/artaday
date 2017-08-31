@@ -1,6 +1,7 @@
-.artwork
+.single.artwork
   - if @artwork.attachment.present?
     = image_tag @artwork.attachment.url, class: 'attachment'
   .info
-    h1.title = @artwork.title
+    h2.title = @artwork.title
+    h5.medium = @artwork.medium.name
     p.description = @artwork.description

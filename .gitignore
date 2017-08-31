@@ -20,3 +20,4 @@
 # Ignore Byebug command history file.
 .byebug_history
 app/assets/stylesheets/milligram.css
+app/assets/stylesheets/normalize.css
