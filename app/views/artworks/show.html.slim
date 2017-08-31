@@ -1,4 +1,5 @@
 .artwork
-  h1 = @artwork.title
-  .attachment
-    = image_tag @artwork.attachment.url
+  = image_tag @artwork.attachment.url, class: 'attachment'
+  .info
+    h1.title = @artwork.title
+    p.description = @artwork.description

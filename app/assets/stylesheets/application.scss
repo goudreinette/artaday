@@ -135,7 +135,7 @@ nav {
                 width: 100%;
                 bottom: 0;
                 opacity: 0;
-                background: rgba(0, 0, 0, 0.15);
+                background: rgba(0, 0, 0, 0.5);
                 transition: all 0.3s;
 
                 .title, .medium {
@@ -152,4 +152,13 @@ nav {
             }
         }
     }
+}
+
+
+/**
+ * Single
+ */
+.attachment {
+    background: #eee;
+    margin: auto;
 }
