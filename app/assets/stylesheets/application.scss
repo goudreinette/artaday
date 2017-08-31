@@ -61,3 +61,20 @@ nav {
         font-size: 2rem;
     }
 }
+
+
+/**
+ * Grid
+ */
+.art-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.artwork {
+    width: 25%;
+
+    :nth-child(1), :nth-child(2) {
+        width: 50%;
+    }
+}

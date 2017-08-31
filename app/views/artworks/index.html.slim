@@ -2,4 +2,5 @@ h1 Artworks#index
 | Find me in app/views/artworks/index.html.slim
 
 .art-grid
-  
+  - Artwork.all.each do |artwork|
+    a.artwork href=artwork_url(artwork) = artwork.title
