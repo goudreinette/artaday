@@ -16,4 +16,10 @@ html
           = link_to "Submit Artwork", new_artwork_path, class: 'button button-outline'
           button.button-clear Profile
       main
+        - if current_user
+          | Welcome #{current_user.name}!
+          = link_to "Sign Out", signout_path
+        - else
+          = link_to "Sign in", "/auth/developer"
+
         = yield
