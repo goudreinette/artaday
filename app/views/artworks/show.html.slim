@@ -1,5 +1,6 @@
 .artwork
-  = image_tag @artwork.attachment.url, class: 'attachment'
+  - if @artwork.attachment.present?
+    = image_tag @artwork.attachment.url, class: 'attachment'
   .info
     h1.title = @artwork.title
     p.description = @artwork.description
