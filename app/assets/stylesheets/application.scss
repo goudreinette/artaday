@@ -21,11 +21,12 @@
  */
 $accent: #880000;
 $text-color: #333;
+$light-color: #555;
+
 
 /**
  * Global
  */
-
 * {
     font-family: NeuzeitGroTOT !important;
     color: $text-color;
@@ -51,6 +52,10 @@ form {
     padding-top: 50px;
 }
 
+.button-outline {
+    border-color: #ddd;
+}
+
 /**
  * Nav
  */
@@ -69,6 +74,7 @@ nav {
     .topic {
         margin-right: auto;
         padding-left: 10px;
+        font-size: 2rem;
     }
 
     :last-child {
@@ -76,11 +82,11 @@ nav {
     }
 
     a {
-        color: $text-color !important;
+        color: $light-color !important;
         margin-bottom: 0 !important;
 
-        &:not(:hover) {
-            border: 1px solid rgba(0,0,0,0);
+        &:hover {
+            color: $text-color !important;
         }
     }
 }
@@ -97,9 +103,31 @@ nav {
 .artwork {
     width: 25%;
     height: 200px;
-    background: grey;
+    display: flex;
+    padding: 1px;
 
     &:nth-child(1), &:nth-child(2) {
         width: 50%;
+    }
+
+    .inner {
+        background: grey;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        position: relative;
+        transition: all 0.3s;
+
+        &:hover {
+            background: #a7a7a7;
+        }
+
+        .info {
+            align-self: flex-end;
+            padding: 15px 20px;
+            position: absolute;
+            bottom: 0;
+            color: white;
+        }
     }
 }
