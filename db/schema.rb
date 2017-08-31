@@ -1,4 +1,9 @@
 ActiveRecord::Schema.define do
+  create_table :users do |t|
+    t.text :description
+    t.timestamps
+  end
+
   create_table :topics do |t|
     t.string :name
     t.date :date
@@ -16,9 +21,12 @@ ActiveRecord::Schema.define do
   create_table :artworks do |t|
     t.string :title
     t.text :description
+
     t.belongs_to :topic
     t.belongs_to :medium
     t.belongs_to :type
+    t.belongs_to :user
+
     t.attachment :attachment
     t.timestamps
   end

@@ -1,2 +1,6 @@
 h1 Artworks#index
 | Find me in app/views/artworks/index.html.slim
+
+ul
+  - Artwork.all.each do |artwork|
+    li = artwork.title
