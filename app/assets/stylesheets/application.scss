@@ -110,6 +110,12 @@ nav {
         width: 50%;
     }
 
+    &:hover {
+        .info {
+            opacity: 1 !important;
+        }
+    }
+
     .inner {
         background: grey;
         height: 100%;
@@ -126,8 +132,23 @@ nav {
             align-self: flex-end;
             padding: 15px 20px;
             position: absolute;
+            width: 100%;
             bottom: 0;
-            color: white;
+            opacity: 0;
+            background: rgba(0, 0, 0, 0.15);
+            transition: all 0.3s;
+
+            .title, .medium {
+                color: white;
+            }
+
+            .title {
+                font-size: 1.8rem;
+            }
+
+            .medium {
+                font-size: 1.2rem;
+            }
         }
     }
 }

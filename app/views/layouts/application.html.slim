@@ -18,6 +18,6 @@ html
             a.button.button-clear Profile
             = link_to "Sign Out", signout_path, class: 'button button-clear'
           - else
-            = link_to "Sign in", "/auth/developer", class: 'button button-outline'
+            = link_to "Sign in", "/auth/developer", class: 'button button-clear'
       main
         = yield

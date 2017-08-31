@@ -2,4 +2,6 @@
   - Artwork.all.each do |artwork|
     a.artwork href=artwork_url(artwork)
       .inner
-        .info = artwork.title
+        .info
+          .title = artwork.title
+          .medium = artwork.medium.name 
