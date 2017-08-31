@@ -5,7 +5,7 @@ class ArtworksController < ApplicationController
     @artwork = Artwork.new(params.require(:artwork).permit(:title, :description, :medium_id))
     @artwork.topic = Topic.first
     @artwork.type = Type.first
-    p @artwork
+    @artwork.user = current_user
     @artwork.save!
     redirect_to @artwork
   end
