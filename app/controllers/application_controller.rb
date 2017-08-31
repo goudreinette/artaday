@@ -11,31 +11,23 @@ class ApplicationController < ActionController::Base
     singular = model.name.downcase
     plural   = singular.pluralize
 
-
     define_method :show do
       instance_variable_set "@#{singular}".to_sym, model.find(params[:id])
     end
 
     define_method :new do
-      instance_variable_set "@#{singular}".to_sym, model.find(params[:id])
     end
 
     define_method :create do
-
     end
 
-
     define_method :edit do
-
     end
 
     define_method :update do
-
     end
 
-
     define_method :delete do
-
     end
   end
 end
