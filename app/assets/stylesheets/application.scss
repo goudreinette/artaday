@@ -14,12 +14,13 @@
  *= require_self
  */
 @import "//cdn.rawgit.com/necolas/normalize.css/master/normalize.css";
-@import "//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css";
+@import "/stylesheets/milligram.css";
 
 /**
  * Variables
  */
 $accent: #880000;
+$text-color: #333;
 
 /**
  * Global
@@ -27,6 +28,7 @@ $accent: #880000;
 
 * {
     font-family: NeuzeitGroTOT !important;
+    color: $text-color;
 }
 
 html {
@@ -35,17 +37,19 @@ html {
 
 body {
     height: 100%;
-    padding-top: 50px;
+    padding: 50px 25px;
 }
 
 .container {
 }
 
 main {
-    padding-top: 50px;
 
 }
 
+form {
+    padding-top: 50px;
+}
 
 /**
  * Nav
@@ -55,10 +59,29 @@ nav {
     justify-content: space-between;
     border-bottom: 1px solid #eee;
     align-items: center;
+    padding: 5px;
 
     .logo {
         font-weight: bold;
         font-size: 2rem;
+    }
+
+    .topic {
+        margin-right: auto;
+        padding-left: 10px;
+    }
+
+    :last-child {
+        padding-right: 0;
+    }
+
+    a {
+        color: $text-color !important;
+        margin-bottom: 0 !important;
+
+        &:not(:hover) {
+            border: 1px solid rgba(0,0,0,0);
+        }
     }
 }
 
@@ -73,6 +96,8 @@ nav {
 
 .artwork {
     width: 25%;
+    height: 200px;
+    background: grey;
 
     &:nth-child(1), &:nth-child(2) {
         width: 50%;

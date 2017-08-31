@@ -10,16 +10,14 @@ html
     .container
       nav
         .logo
-          = link_to 'Art a Day', root_path
-        .title Schadenfreude
+          = link_to 'art a day: ', root_path
+        .topic Schadenfreude
         .buttons
           - if current_user
             = link_to "Submit Artwork", new_artwork_path, class: 'button button-outline'
-            button.button-clear Profile
+            a.button.button-clear Profile
             = link_to "Sign Out", signout_path, class: 'button button-clear'
           - else
             = link_to "Sign in", "/auth/developer", class: 'button button-outline'
       main
-        - if current_user
-          | Welcome #{current_user.name}
         = yield

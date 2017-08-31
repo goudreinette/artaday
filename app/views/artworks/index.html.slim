@@ -1,4 +1,5 @@
 .art-grid
   - Artwork.all.each do |artwork|
-    a.artwork href=artwork_url(artwork) = artwork.title
+    a.artwork href=artwork_url(artwork)
       .inner
+        .info = artwork.title
