@@ -62,9 +62,10 @@ form {
 nav {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #eee;
+    // border-bottom: 1px solid #eee;
     align-items: center;
     padding: 5px;
+    margin-bottom: 30px;
 
     .logo {
         font-weight: bold;
