@@ -13,13 +13,13 @@ html
           = link_to 'Art a Day', root_path
         .title Schadenfreude
         .buttons
-          = link_to "Submit Artwork", new_artwork_path, class: 'button button-outline'
-          button.button-clear Profile
+          - if current_user
+            = link_to "Submit Artwork", new_artwork_path, class: 'button button-outline'
+            button.button-clear Profile
+            = link_to "Sign Out", signout_path, class: 'button button-clear'
+          - else
+            = link_to "Sign in", "/auth/developer", class: 'button button-outline'
       main
         - if current_user
-          | Welcome #{current_user.name}!
-          = link_to "Sign Out", signout_path
-        - else
-          = link_to "Sign in", "/auth/developer"
-
+          | Welcome #{current_user.name}
         = yield
