@@ -6,6 +6,11 @@ class SessionsController < ApplicationController
     redirect_to root_url, :notice => "Signed in!"
   end
 
+  def show
+    @user = current_user
+    @artworks = @user.artworks
+  end
+
   def destroy
     session[:user_id] = nil
     redirect_to root_url, :notice => "Signed out!"

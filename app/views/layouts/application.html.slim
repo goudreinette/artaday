@@ -15,7 +15,7 @@ html
         .buttons
           - if current_user
             = link_to "Submit Artwork", new_artwork_path, class: 'button button-outline'
-            a.button.button-clear Profile
+            = link_to "Profile", '/profile', class: 'button button-clear' 
             = link_to "Sign Out", signout_path, class: 'button button-clear'
           - else
             = link_to "Sign in", "/auth/developer", class: 'button button-clear'
