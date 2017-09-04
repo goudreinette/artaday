@@ -15,10 +15,6 @@ ActiveRecord::Schema.define do
     t.timestamps
   end
 
-  create_table :types do |t|
-    t.string :name
-  end
-
   create_table :media do |t|
     t.string :name
   end
@@ -29,7 +25,6 @@ ActiveRecord::Schema.define do
 
     t.belongs_to :topic
     t.belongs_to :medium
-    t.belongs_to :type
     t.belongs_to :user
 
     t.attachment :attachment
