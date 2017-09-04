@@ -188,3 +188,13 @@ img.attachment {
     height: inherit;
     position: relative;
 }
+
+
+/**
+ * Profile
+ */
+.profile {
+    h3:not(:first-of-type) {
+        margin-top: 50px;
+    }
+}
