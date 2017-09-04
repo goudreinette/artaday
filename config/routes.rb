@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
-  resources :artworks
   root 'artworks#index'
+
+  resources :artworks do
+    member do
+      get 'favorite'
+      get 'unfavorite'
+    end
+  end
 
   get '/profile' => 'sessions#show'
 

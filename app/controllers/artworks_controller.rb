@@ -9,4 +9,18 @@ class ArtworksController < ApplicationController
     @artwork.save!
     redirect_to @artwork
   end
+
+  def favorite
+    @artwork = Artwork.find(params[:id])
+    @artwork.liked_by current_user
+    @artwork.save
+    redirect_to @artwork
+  end
+
+  def unfavorite
+    @artwork = Artwork.find(params[:id])
+    @artwork.unliked_by current_user
+    @artwork.save
+    redirect_to @artwork
+  end
 end

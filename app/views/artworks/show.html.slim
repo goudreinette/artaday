@@ -7,3 +7,9 @@
     h2.title = @artwork.title
     h5.medium = @artwork.medium.name
     p.description = @artwork.description
+    p.favorites
+      - if current_user.liked? @artwork
+        = link_to 'Unfavorite', controller: "artworks", action: "unfavorite", id: @artwork
+      - else
+        = link_to 'Favorite', controller: "artworks", action: "favorite", id: @artwork
+      = " (#{@artwork.get_likes.size})"
