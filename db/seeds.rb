@@ -18,14 +18,6 @@ Medium.create([
 ])
 
 
-Type.create([
-  {name: 'Audio'},
-  {name: 'Video'},
-  {name: 'Image'},
-  {name: 'Code'},
-  {name: 'Text'}
-])
-
 Topic.create([
     {name: 'Joy'},
     {name: 'Loss'},
