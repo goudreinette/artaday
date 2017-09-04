@@ -9,8 +9,7 @@
     p.description = @artwork.description
     p.favorites
       = pluralize(@artwork.get_likes.size, "favorite")
-      = " - "
       - if current_user&.liked? @artwork
-        = link_to 'unfavorite', controller: "artworks", action: "unfavorite", id: @artwork
+        = link_to ' - unfavorite', controller: "artworks", action: "unfavorite", id: @artwork
       - elsif current_user
-        = link_to 'favorite', controller: "artworks", action: "favorite", id: @artwork
+        = link_to ' - favorite', controller: "artworks", action: "favorite", id: @artwork
