@@ -1,4 +1,6 @@
-h1 = "#{@user.name}'s Profile"
+h1
+  = "#{@user.name}'s Profile"
+  = link_to "Sign Out", signout_path, class: 'button button-clear'
 
 h3 Artworks
 = render "/art_grid"
