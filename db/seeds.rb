@@ -26,3 +26,10 @@ Topic.create([
     {name: 'Dogs'},
     {name: 'T-shirts'},
 ])
+
+
+User.create({
+    name: 'rein',
+    uid: 'reinvanderwoerd@me.com',
+    provider: 'development'
+})

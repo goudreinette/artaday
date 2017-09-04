@@ -30,4 +30,9 @@ ActiveRecord::Schema.define do
     t.attachment :attachment
     t.timestamps
   end
+
+   create_table :favorites, id: false do |t|
+    t.belongs_to :artworks, index: true
+    t.belongs_to :users, index: true
+  end
 end

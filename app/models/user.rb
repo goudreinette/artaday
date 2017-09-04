@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   has_many :artworks
+  has_many :artworks, through: :favorites
 
   def self.create_with_omniauth(auth)
     create! do |user|
