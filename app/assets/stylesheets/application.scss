@@ -54,6 +54,11 @@ form {
 
 .button-outline {
     border-color: #ddd;
+    color: $light-color !important;
+}
+
+.button-clear {
+    color: $light-color !important;
 }
 
 /**
@@ -194,6 +199,12 @@ img.attachment {
  * Profile
  */
 .profile {
+    h1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     h3:not(:first-of-type) {
         margin-top: 50px;
     }

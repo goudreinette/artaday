@@ -1,7 +1,7 @@
 .profile
   h1
     = "#{@user.name}'s Profile"
-    = link_to "Sign Out", signout_path, class: 'button button-clear'
+    = link_to "Sign Out", signout_path, class: 'button button-outline'
 
   h3 Artworks
   = render "/art_grid"
