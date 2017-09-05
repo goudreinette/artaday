@@ -11,7 +11,7 @@ html
       nav
         .logo
           = link_to 'art a day: ', root_path
-        .topic Schadenfreude
+        .topic = Topic.of_today.name
         .buttons
           - if current_user
             = link_to "Submit Artwork", new_artwork_path, class: 'button button-outline'
