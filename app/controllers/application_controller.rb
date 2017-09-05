@@ -9,7 +9,9 @@ class ApplicationController < ActionController::Base
 
 
   def todays_topic
-    @current_user ||= User.find(session[:user_id]) if session[:user_id]
+    @todays_topic ||= Topic.where(date: nil).sample
+    @todays_topic.date = Date.today
+    @todays_topic.save
   end
 
 
