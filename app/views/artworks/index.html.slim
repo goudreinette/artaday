@@ -1,5 +1,5 @@
 .art-grid
-  - Artwork.all.each do |artwork|
+  - Topic.of_today.artworks.each do |artwork|
     a.artwork href=artwork_url(artwork)
       .inner style="background-image: url(#{artwork.attachment.url})"
         .info
