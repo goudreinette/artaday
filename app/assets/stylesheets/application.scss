@@ -77,10 +77,14 @@ nav {
         font-size: 2rem;
     }
 
-    .topic {
+    .topic, .date {
         margin-right: auto;
-        padding-left: 10px;
         font-size: 2rem;
+    }
+
+    .date {
+        text-transform: lowercase;
+        padding-left: 10px;
     }
 
     :last-child {

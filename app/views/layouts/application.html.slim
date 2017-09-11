@@ -11,6 +11,7 @@ html
       nav
         .logo
           = link_to 'art a day: ', root_path
+        .date = Date.today.stamp 'wednesday june 25'
         .topic = Topic.of_today.name
         .buttons
           - if current_user
