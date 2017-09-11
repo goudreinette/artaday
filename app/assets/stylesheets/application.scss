@@ -45,7 +45,7 @@ body {
 }
 
 main {
-
+    padding-bottom: 50px;
 }
 
 form {
@@ -106,18 +106,18 @@ nav {
  * Grid
  */
 .art-grid {
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
 
     .artwork {
-        width: 25%;
-        height: 200px;
-        display: flex;
+        // width: 25%;
+        // height: 200px;
+        // display: flex;
         background-size: cover;
-
-        &:nth-child(1), &:nth-child(2) {
-            width: 50%;
-        }
+        //
+        // &:nth-child(1), &:nth-child(2) {
+        //     width: 50%;
+        // }
 
         &:hover {
             .inner {

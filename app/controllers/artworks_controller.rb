@@ -1,6 +1,9 @@
 class ArtworksController < ApplicationController
   self.make_methods Artwork
 
+  def index
+    @artworks = Topic.of_today.artworks
+  end
 
   def create
     @artwork = Artwork.new(params.require(:artwork).permit(:title, :description, :medium_id, :attachment))

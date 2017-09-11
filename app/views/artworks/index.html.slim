@@ -1,7 +1,1 @@
-.art-grid
-  - Topic.of_today.artworks.each do |artwork|
-    a.artwork href=artwork_url(artwork)
-      .inner style="background-image: url(#{artwork.attachment.url})"
-        .info
-          .title = artwork.title
-          .medium = artwork.medium.name
+= render "/art_grid"

@@ -1,7 +1,7 @@
-.art-grid
+.art-grid.grid data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'
   - @artworks.each do |artwork|
-    a.artwork href=artwork_url(artwork)
-      .inner style="background-image: url(#{artwork.attachment.url})"
-        .info
-          .title = artwork.title
-          .medium = artwork.medium.name
+    a.artwork.grid-item href=artwork_url(artwork)
+      = image_tag artwork.attachment.url
+      .info
+        .title = artwork.title
+        .medium = artwork.medium.name

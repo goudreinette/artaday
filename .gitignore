@@ -21,3 +21,6 @@
 .byebug_history
 app/assets/stylesheets/milligram.css
 app/assets/stylesheets/normalize.css
+app/assets/javascripts/masonry**.js
+
+public/system/artworks/**.*
