@@ -1,0 +1,44 @@
+/**
+ * Artwork
+ */
+.single.artwork {
+    display: flex;
+}
+
+.single.artwork .info {
+    width: 300px;
+    border-left: 1px solid #eee;
+    padding: 20px 50px;
+}
+
+.single.artwork .attachment-container {
+    width: calc(100% - 300px);
+}
+
+.attachment-container .attachment {
+    height: 80%;
+}
+
+.single.artwork .attachment {
+    margin: auto;
+}
+
+.single.artwork .title {
+    margin-bottom: 3px;
+    margin-top: 20px;
+}
+
+.single.artwork .medium {
+    margin-top: 0px;
+}
+
+.attachment-container {
+    height: 500px;
+    display: flex;
+}
+
+img.attachment {
+    margin: auto;
+    height: inherit;
+    position: relative;
+}

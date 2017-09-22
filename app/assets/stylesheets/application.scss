@@ -13,8 +13,7 @@
  *= require_tree .
  *= require_self
  */
-@import "/stylesheets/normalize.css";
-@import "/stylesheets/milligram.css";
+
 
 /**
  * Variables
@@ -163,32 +162,6 @@ nav {
 /**
  * Single
  */
-.single.artwork {
-    .attachment {
-        margin: auto;
-    }
-
-    .title {
-        margin-bottom: 3px;
-        margin-top: 20px;
-    }
-
-    .medium {
-        margin-top: 0px;
-    }
-}
-
-.attachment-container {
-    height: 500px;
-    background: #f3f3f3;
-    display: flex;
-}
-
-img.attachment {
-    margin: auto;
-    height: inherit;
-    position: relative;
-}
 
 
 /**
