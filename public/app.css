@@ -6,7 +6,7 @@
 }
 
 .single.artwork .info {
-    width: 300px;
+    width: 400px;
     border-left: 1px solid #eee;
     padding: 20px 50px;
 }
@@ -41,4 +41,47 @@ img.attachment {
     margin: auto;
     height: inherit;
     position: relative;
+}
+
+
+/* Actions */
+
+
+.actions {
+    display: flex;
+    width: 100px !important;
+}
+
+.actions button {
+    background: none;
+    /* display: flex; */
+    align-items: center;
+    color: #333;
+    font-size: 12px !important;
+    font-weight: normal;
+    margin: 0;
+    padding-top: 12px !important;
+    padding: 10px;
+    border-radius: 0;
+    border-color: #888;
+}
+
+
+.actions button.like {
+    background-image: url("/images/like.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px;
+    padding: 20px;
+}
+
+.actions button:first-child {
+    border-right: 0;
+}
+
+
+h2.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

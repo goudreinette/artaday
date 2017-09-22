@@ -4,7 +4,11 @@
       = image_tag @artwork.attachment.url, class: 'attachment'
 
   .info
-    h2.title = @artwork.title
+    h2.title
+      = @artwork.title
+      .actions
+        button.like
+        button.make-variation make variation
     h5.medium = @artwork.medium.name
     p.description = @artwork.description
     p.favorites
