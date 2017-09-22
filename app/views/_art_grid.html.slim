@@ -1,4 +1,4 @@
-.art-grid.grid data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'
+.art-grid.grid
   - @artworks.each do |artwork|
     a.artwork.grid-item href=artwork_url(artwork)
       = image_tag artwork.attachment.url

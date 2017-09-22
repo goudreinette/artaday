@@ -2,7 +2,7 @@ doctype html
 html
   head
     meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
-    title ArtADay
+    title dialogue
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
@@ -11,14 +11,12 @@ html
     .container
       nav
         .logo
-          = link_to 'art a day: ', root_path
-        .date = Date.today.stamp 'wednesday june 25'
-        .topic = Topic.of_today.name
+          = link_to 'dialogue', root_path
         .buttons
           - if current_user
-            = link_to "Submit Artwork", new_artwork_path, class: 'button button-outline'
-            = link_to "Profile", '/profile', class: 'button button-clear'
+            = link_to "Submit Artwork", new_artwork_path
+            = link_to "Profile", '/profile'
           - else
-            = link_to "Sign in", "/auth/developer", class: 'button button-clear'
+            = link_to "Sign in", "/auth/developer"
       main
         = yield
