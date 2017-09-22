@@ -17,17 +17,6 @@ Medium.create([
   {name: 'Design'}
 ])
 
-
-Topic.create([
-    {name: 'Joy'},
-    {name: 'Loss'},
-    {name: 'Schadenfreude'},
-    {name: 'Sun'},
-    {name: 'Dogs'},
-    {name: 'T-shirts'},
-])
-
-
 User.create({
     name: 'rein',
     uid: 'reinvanderwoerd@me.com',

@@ -4,7 +4,6 @@ class Artwork < ApplicationRecord
 
   acts_as_votable
 
-  belongs_to :topic
   belongs_to :medium
   belongs_to :user
 end

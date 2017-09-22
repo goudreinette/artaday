@@ -2,12 +2,11 @@ class ArtworksController < ApplicationController
   self.make_methods Artwork
 
   def index
-    @artworks = Topic.of_today.artworks
+    @artworks = Artwork.all
   end
 
   def create
     @artwork = Artwork.new(params.require(:artwork).permit(:title, :description, :medium_id, :attachment))
-    @artwork.topic = Topic.of_today
     @artwork.user = current_user
     @artwork.save!
     redirect_to @artwork
